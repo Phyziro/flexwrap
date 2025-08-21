@@ -29,7 +29,7 @@ async TemplateFetch(
   if(url === null) return;
     try{
       const _Data_ = fetch(
-        `location/of/markdown.md`,
+        url,
         {
           method:{
               selected:['GET', 'POST'][Number(http_method)]
