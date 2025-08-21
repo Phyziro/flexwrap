@@ -1,5 +1,8 @@
 # Markdown Styling for TailwindCss projects
 
+This project is an unlicensed, public domain project.
+
+
 The `.css` file found [tailwindcss-markdown-styling/css/markdown](https://github.com/Phyziro/tailwindcss-markdown-styling/blob/main/css/markdown) when included will applying styling to synchronous and asynchronously generated `.md` text.
 
 ## How to parse an `.md` file using an external library
@@ -14,6 +17,7 @@ Simply include the Marked library from the public NPM repository within your pro
 ## How to ue the `.md` file library to parse the `.md` file
 
 ```Javascript
+<script>
 const _MarkdownDisplayContainer_ = document.getElementById('your-markdown-display-container');
 
 // This would be your general fetch template
@@ -52,6 +56,13 @@ async TemplateFetch(
 // Use the libraries built-in method `marked.parse()` to convert the plain/text into .md format
 // this is done by adding html tags relative to the .md syntax, which is handld by the Marked library
 _MarkdownDisplayContainer_.innerHTML = await marked.parse(TemplateFetch(`location/of/markdown.md`,1));
+</script>
 ```
+
+Once the markdown has been parsed by the Marked library, the `.css` styling will be applied dynamically.
+
+# Contributing
+
+If you make any improvements to the `.css` please share them via e-mail `phyziro@phyziro.com` or on our [Discord](https://discord.gg/m69dTsPmut) so that all may enjoy the updates.
 
 
