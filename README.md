@@ -13,7 +13,7 @@ Simply include the Marked library from the public NPM repository within your pro
 
 ## How to ue the `.md` file library to parse the `.md` file
 
-```
+```Javascript
 const _MarkdownDisplayContainer_ = document.getElementById('your-markdown-display-container');
 
 // This would be your general fetch template
