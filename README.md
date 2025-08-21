@@ -17,10 +17,9 @@ Simply include the Marked library from the public NPM repository within your pro
 ## How to ue the `.md` file library to parse the `.md` file
 
 ```Javascript
-<script>
+// Vanilla JS
 const _MarkdownDisplayContainer_ = document.getElementById('your-markdown-display-container');
 
-// This would be your general fetch template
 async TemplateFetch(
   url=null,
   method=0,
@@ -51,12 +50,12 @@ async TemplateFetch(
      // Obtain the markdown .md content
      return await _MarkdownData_.text();
     }
-}catch(error){...}
+}catch(error){/*...*/}
 
 // Use the libraries built-in method `marked.parse()` to convert the plain/text into .md format
 // this is done by adding html tags relative to the .md syntax, which is handld by the Marked library
 _MarkdownDisplayContainer_.innerHTML = await marked.parse(TemplateFetch(`location/of/markdown.md`,1));
-</script>
+
 ```
 
 Once the markdown has been parsed by the Marked library, the `.css` styling will be applied dynamically.
