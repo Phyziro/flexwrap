@@ -44,8 +44,8 @@ async TemplateFetch(
                 }.selected
         }
       );
-      if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
+      if (!_Data_.ok) {
+                throw new Error(`HTTP error! status: ${_Data_.status}`);
       }
      // Obtain the markdown .md content
      return await _Data_.text();
