@@ -1,0 +1,114 @@
+       /*
+            The main container for the Markdown content.
+            Tailwind classes handle max-width, centering, padding, background, border-radius, and shadow.
+            'markdown-content' is used below for more specific element styling.
+        */
+        .markdown-content {
+            /* These are Tailwind classes applied directly in the HTML div for layout: */
+            /* max-w-2xl mx-auto p-8 bg-white rounded-lg shadow-md */
+            color: #374151; /* Default text color */
+        }
+
+        /* Styling for Markdown elements within the container */
+        .markdown-content h1 {
+            font-size: 2.25rem; /* text-4xl */
+            font-weight: 700; /* font-bold */
+            margin-top: 1.5em;
+            margin-bottom: 0.75em;
+            padding-bottom: 0.3em;
+            border-bottom: 1px solid #e5e7eb; /* border-b border-gray-200 */
+        }
+        .markdown-content h2 {
+            font-size: 1.875rem; /* text-3xl */
+            font-weight: 600; /* font-semibold */
+            margin-top: 1.5em;
+            margin-bottom: 0.75em;
+            padding-bottom: 0.3em;
+            border-bottom: 1px solid #e5e7eb; /* border-b border-gray-200 */
+        }
+        .markdown-content h3 {
+            font-size: 1.5rem; /* text-2xl */
+            font-weight: 600; /* font-semibold */
+            margin-top: 1.5em;
+            margin-bottom: 0.75em;
+        }
+        .markdown-content h4 {
+            font-size: 1.25rem; /* text-xl */
+            font-weight: 600; /* font-semibold */
+            margin-top: 1em;
+            margin-bottom: 0.5em;
+        }
+        .markdown-content p {
+            margin-bottom: 1em;
+        }
+        .markdown-content ul,
+        .markdown-content ol {
+            padding-left: 1.5em; /* pl-6 */
+            margin-bottom: 1em;
+            list-style-position: outside; /* Ensure bullets/numbers are outside content flow */
+        }
+        .markdown-content ul li {
+            list-style-type: disc; /* default disc for ul */
+        }
+        .markdown-content ol li {
+            list-style-type: decimal; /* default decimal for ol */
+        }
+        .markdown-content a {
+            color: #2563eb; /* text-blue-700 */
+            text-decoration: none;
+        }
+        .markdown-content a:hover {
+            text-decoration: underline;
+        }
+        .markdown-content strong {
+            font-weight: 700; /* font-bold */
+        }
+        .markdown-content em {
+            font-style: italic;
+        }
+        .markdown-content blockquote {
+            border-left: 4px solid #9ca3af; /* border-l-4 border-gray-400 */
+            padding-left: 1em; /* pl-4 */
+            color: #6b7280; /* text-gray-600 */
+            margin: 1em 0;
+            font-style: italic;
+        }
+        .markdown-content pre {
+            background-color: #1f2937; /* bg-gray-800 */
+            color: #f3f4f6; /* text-gray-100 */
+            padding: 1rem; /* p-4 */
+            border-radius: 0.5rem; /* rounded-lg */
+            overflow-x: auto;
+            font-family: 'Courier New', Courier, monospace;
+            margin-bottom: 1em;
+        }
+        .markdown-content code {
+            background-color: #e5e7eb; /* bg-gray-200 */
+            color: #1f2937; /* text-gray-800 */
+            padding: 0.25em 0.5em; /* px-2 py-1 */
+            border-radius: 0.25rem; /* rounded */
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .markdown-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1em;
+        }
+        .markdown-content th,
+        .markdown-content td {
+            border: 1px solid #d1d5db; /* border border-gray-300 */
+            padding: 0.75rem; /* p-3 */
+            text-align: left;
+        }
+        .markdown-content th {
+            background-color: #f9fafb; /* bg-gray-50 */
+            font-weight: 600; /* font-semibold */
+        }
+        .markdown-content tr:nth-child(even) {
+            background-color: #f3f4f6; /* bg-gray-100 */
+        }
+        .markdown-content hr {
+            border: none;
+            border-top: 1px solid #d1d5db; /* border-t border-gray-300 */
+            margin: 2em 0;
+        }
