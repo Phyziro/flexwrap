@@ -20,7 +20,7 @@ Simply include the Marked library from the public NPM repository within your pro
 // Vanilla JS
 const _MarkdownDisplayContainer_ = document.getElementById('your-markdown-display-container');
 
-async TemplateFetch(
+async function TemplateFetch(
   url=null,
   method=0,
   content_type=0,
