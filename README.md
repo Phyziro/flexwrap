@@ -28,7 +28,7 @@ async TemplateFetch(
 ){
   if(url === null) return;
     try{
-      const _MarkdownData_ = fetch(
+      const _Data_ = fetch(
         `location/of/markdown.md`,
         {
           method:{
@@ -48,7 +48,7 @@ async TemplateFetch(
                 throw new Error(`HTTP error! status: ${response.status}`);
       }
      // Obtain the markdown .md content
-     return await _MarkdownData_.text();
+     return await _Data_.text();
     }
 }catch(error){/*...*/}
 
