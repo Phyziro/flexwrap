@@ -44,7 +44,6 @@ Simply include the Marked library from the public NPM repository within your pro
 <md>
 ###### Heading size 6
 
-
 > This is a blockqoute
 
 </md>
