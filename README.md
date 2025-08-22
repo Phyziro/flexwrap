@@ -15,7 +15,7 @@ Simply include the Marked library from the public NPM repository within your pro
 ```
 
 # What a markdown file looks like using FlexWrap
-```
+```html
 <md-xml init="schema">
 <schema class='hidden'>
   [
