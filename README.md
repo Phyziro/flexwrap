@@ -1,5 +1,7 @@
 # Flexwrap
 
+FlexWrap is a tool we use at internally at Phyziro. Since the FlexWrap tool is simply an ancilary product that is a byproduct of us building out our codebase, we've decided to open source the tool.
+
 With FlexWrap you can add TailwindCss to your Markdown `.md` files revolutionizing how you present code, documentation and guides with Markdown. FlexWrap is public domain and unlicensed, meaning you'll never have to worry about licesning hindering your progress.
 
 
