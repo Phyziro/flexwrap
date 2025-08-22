@@ -5,7 +5,7 @@ With FlexWrap you can add TailwindCss to your Markdown `.md` files revolutionizi
 
 The `.css` file found at [tailwindcss-markdown-styling/css/markdown](https://github.com/Phyziro/tailwindcss-markdown-styling/blob/main/css/markdown) is the default Markdown `.md` styling that will be used for rendering text adherent to the Markdown syntax.
 
-# Including the  `.md` file using an external library
+# Including the  `.md` parser external library
 
 Simply include the Marked library from the public NPM repository within your projects header element:
 ```  
