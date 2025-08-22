@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- markdown conversion library -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+   <!-- flexwrapper library -->
+    <script src="../js/flexwrapper.js"></script>
+</head>
+<body>
+
+ <div id='markdown-display-container'></div>
+  
+ <script>
+   const  _MarkdownDisplayContainer_ = document.getElementById('markdown-display-container'); 
+  // get your .md file (use whatever method you want to use for obtaining the file, this isn't required)
+  async function TemplateFetch(
+    url=null,
+    method=0,
+    content_type=0,
+    body:2
+  ){
+    // Flexwrapper Register
+    customElements.define("md-xml", flexwrap);
+    
+    if(url === null) return;
+      try{
+        const _Data_ = fetch(
+          url,
+          {
+            method:{
+                selected:['GET', 'POST'][Number(http_method)]
+            }.selected,
+            headers:{
+              'Content-Type' : {
+                    selected:['text/plain', 'application/json'][Number(content_type)]
+                }.selected,
+            },
+            body: {
+                    selected: [JSON.stringify(http_body), http_body, null][Number(body_type)]
+                  }.selected
+          }
+        );
+        if (!_Data_.ok) {
+                  throw new Error(`HTTP error! status: ${_Data_.status}`);
+        }
+       // Obtain the markdown .md content
+       return await _Data_.text();
+      }
+  }catch(e){
+        /*...*/
+  }
+  (async () => {
+    _MarkdownDisplayContainer_.innerHTML = await TemplateFetch(`../markdownFlexwrapperExample.md`,1));
+  })();    
+  </script>
+</body>
+</html>
+  
+
