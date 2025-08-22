@@ -21,9 +21,6 @@
     content_type=0,
     body:2
   ){
-    // Flexwrapper Register
-    customElements.define("md-xml", flexwrap);
-    
     if(url === null) return;
       try{
         const _Data_ = fetch(
@@ -52,6 +49,8 @@
         /*...*/
   }
   (async () => {
+    // Flexwrapper .md/XML Register
+    customElements.define("md-xml", flexwrap);
     _MarkdownDisplayContainer_.innerHTML = await TemplateFetch(`../markdownFlexwrapperExample.md`,1));
   })();    
   </script>
