@@ -55,6 +55,9 @@ Simply include the Marked library from the public NPM repository within your pro
 ![FlexWrap](https://phyziro.com/assets/flexwrap-demo-preview.png)
 
 
+### To-do
+> Add rendering agent and basic use tutorial
+
 # Contributing
 
 If you make any improvements to the `.css` please share them via e-mail `phyziro@phyziro.com` or on our [Discord](https://discord.gg/m69dTsPmut) so that all may enjoy the updates.
