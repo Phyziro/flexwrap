@@ -52,7 +52,7 @@ Simply include the Marked library from the public NPM repository within your pro
 ```
 
 ### Result
-[FlexWrap](https://phyziro.com/assets/flexwrap-demo-preview.png)
+![FlexWrap](https://phyziro.com/assets/flexwrap-demo-preview.png)
 
 
 # Contributing
